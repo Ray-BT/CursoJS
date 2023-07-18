@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(65, 56, 56);
+            color: white;
+            font: normal 14pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM </h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        corpo = document.body
+        p1 = window.document.getElementsByTagName('p')[1]            //se o comando estiver no plural "Elements" deve se especificar qual dos elementos voce quer 
+                                                                     //selecionar.EX: se for o primeiro paragrafo [0] se for o segundo[1] etc...
+        window.document.write('Esta escrito assim: ' + p1.innerHTML) //.innerText para mostrar o texto sem as tags
+                                                                     //.innerHTML para mostrar ja formatado com as tags, no caso o strong.
+        p1.style.color = 'yellow'                                    
+        d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        corpo.color.background = 'black'
+        
+        
+     /*  DOM é um acrônimo de Document Obeject model/ Modelo de Documento por Obejetos,
+         basicamente é um conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do website.
+         O DOM não funciona dentro do nodeJS por exemplo. O DOM esta presente quando esta rodando o JavaScript dentro do navegador.
+         
+         Dom é uma árvore hierárquica, quem esta em baixo é chamado chield,
+         quem esta imediatamente acima de quem esta embaixo é parent.
+         ela começa pela raís que dentro do navegador chamamos de window, todo no JS esta dentro de um objeto chamado window.
+         Dentro do window existem varios outros objetos, Exemplos de alguns.
+
+Location: Diz qual a localização do site, qual a URL, qual é a pagina atual, qual foi a pagina anterior...
+
+Document: o documento atual.
+
+History: guarda de onde você veio para onde vai no navegador.
+(imagem no discord)
+
+existem varias formas de navegar entre os elementos da arvore dom.
+Exemplo de 5 formas: getElementsByTagName, getElementById, getElementsByName, getElementsByClassName, querySelector
+(imagem no discord)
+Toda div é representada por uma # e toda clase é representada por um ponto.(isso quando usado o comando querySelector)
+*/
+    </script>
+</body>
+</html>

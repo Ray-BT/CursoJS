@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EditandoHTML</title>
+    <style>
+        body {
+            background-color: rgba(18, 145, 248, 0.836); /*comentario em css*/
+            color: white;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+   <h1>Olá, mundo </h1> <!--comentario em html-->
+   <p> Paragrafo </p>
+   <script>
+    var n1 = Number.parseInt (window.prompt('Digite um número: '))// comando prompt retorna como string
+    var n2 = Number.parseInt (window.prompt('Digite otro número: ')) // mesmo que seja numero, isso é uma caracteristica do comando
+    var s = n1 + n2
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação
+    // (number + number) para adição
+    // (string + string) para concatenação
+
+    /* comandos para converter para numero, é preciso usar um desses comandos caso queira fazer uma soma por exemplo, caso contrario
+    o progama convertera para string e sera feita uma concatenação. 
+    Number.parseInt (para inteiro)
+    Number.parseFloart (para real)
+    Number(n) (para o programa descobrir automaticamente)*/
+
+    /* comandos para converter para string
+    String(n)
+    n.toString() */
+
+    /* var s = 'JavaScript' // não faz interpolação
+    'Eu estou aprendendo s' // Aparecerá 'Eu estou aprendendo s'
+    'Eu estou aprendendo' + s // usa concatenação, Aparecerá 'Eu estou aprendendo JavaScript'
+    `Eu estou aprendendo ${s}` // template string é o acento crase, usado para usar o place holder "${}"*/
+
+    /* s.length // tamanho, quantos caracteres a string tem
+    s.toUpperCase() // tudo para 'MAIÚSCULAS'
+    s.toLowerCase() // tudo para 'minúsculas'*/ 
+
+   </script>
+</body>
+</html>

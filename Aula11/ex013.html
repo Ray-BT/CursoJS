@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        body {
+            color: yellow;
+            background-color: green;
+        }
+        div#res {
+            background-color: rgba(20, 20, 233, 0.801);
+        }
+    </style>
+</head>
+<body>
+    <h1>País de origem</h1>
+    Qual pais voce mora? <input type="text" name="txt" id="txt">
+    <input type="button" value="Select"  onclick="Verificar()">
+    <div id="res">
+
+    <script>
+        function Verificar() {
+         var tx1 = document.querySelector('input#txt')
+         var res = document.querySelector('div#res')
+         var pais = (tx1.value)
+         var tx2 = ('Brasil')
+         var tx3 = ('EUA')
+         if (pais == 'Brasil') {
+            res.innerHTML = ('<p> Você é Brasileiro </p>')
+         } else  {
+            if (pais == 'EUA') { 
+             (res.innerHTML = (`<p> Você mora no ${tx3} então você é estadonidense </p>`)) 
+             }
+
+            }
+         }
+      
+    </script>
+</body>
+</html>

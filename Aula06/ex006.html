@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+
+     /*
+      Aritméticos
+     5+2 7 //Adição
+     5-2 3 // Subtração
+     5*2 10 // Multiplicação
+     5/2 2.5 // Divisão
+     5%2 1 //resto da divisão inteira 5|2 2x2 da 4 o que falta pra 5 é 1, isso sempre em divisão INTEIRA.
+                                      1|2 
+     5**2 25 // Cinco ao quadrado
+
+        ORDEM DE PRECEDÊNCIA
+        |() //Primeiro os parenteses
+        |** // Depois as potências
+        |* / % // Depois multiplicação, divisão e resto da divisão, todos tem a mesma ordem de precedência
+        |caso tenha mais de um deles esteija na mesma expressão,faça da esquerda para direita quem aparecer primeiro.
+        |+ - // Por ultimo as somas e subtrações.
+
+        Exemplo Atribuição Simples:NodeJS
+        var a = 5 + 3 resultado 8
+        var b = a % 5 resultado 3 // letra 'a' vale 8
+        var c = 5 * b ** 2 resultado 45 // letra 'b' vale 3 
+        var d = 10 - a / 2 resultado 6 // letra 'a' vale 8
+        var e = 6 * 2 / d resultado 2  // letra 'd' vale 6
+        var f = b % e + 4 / e resultado 3 // letra 'b' vale 3 letra 'e' vale 2
+        _____________________________________________________________________________________________________________
+
+        Auto-atribuiçÕes
+                        Simplificando               Incremento: tem a mesma função de simplificação.
+        var n = 3                        var x = 5  
+        n = n + 4   |   n+= 4          | x = x + 1  | x++   
+        n = n - 5   |   n-= 5          | x= x - 1   | x--
+        n = n * 4   |   n*= 4
+        n = n / 2   |   n/= 2
+        n = n ** 2  |   n**= 2
+        n = n % 5   |   n%= 5
+        _____________________________________________________________________________________________________________
+
+        Realacionais
+        5 > 2 true
+        7 < 4 false
+        8 >= 8 true
+        9 <= 7 false
+        5 == 5 true // Sinal de igual no JS é '=='
+        4 != 4 false
+        Exemplo:NodeJS
+        a = 8
+        b = 15
+        a <= b < 10        /quando há operadores Relacionais e aritiméticos na mesma expressão
+                           /primeiro resolve-se os aritiméticos depois os relacionais, caso tenha um logico ele será resolvido por ultimo.
+        Identidade
+        5 == 5 true
+        5 == '5' true //sinal de igualdade não testa o tipo, nesse caso temos um 5 inteiro
+                        e um cinco em string, o JS avalia se os dois tem o mesmo valor
+
+        5 === '5' false //Sinal de igualdade restrita testa se é do mesmo valor de do mesmo tipo.
+        5 === 5 true
+        5 !== '5' true // Sinal de desigual restrito, nesse caso eles são de tipos diferentes
+                          porem o valor interno é o mesmo.
+        _____________________________________________________________________________________________________________                  
+            
+            Lógicos
+        ! negação
+        && conjunção // os dois tem que ser true caso contrario será false
+        || disjunção // se um for true então é true se os dois for false é false.
+        Caso em uma mesma expressão tenha um um !(não) um &&(E) e um ||(ou) a ordem de execução é primeiro o 'não' depois o "E' e por ultimo o 'ou'.
+            Exemplos
+        idade >= '15' && idade <= '17'    //a idade está entre 15 e 17
+        estado == 'RJ' || estado == 'SP'  //o estado é RJ ou SP
+        salário > 1500 && sexo != 'M'     // o salário é acima de 1500 e não é homen?
+        _____________________________________________________________________________________________________________
+            Ternários
+        Se chama ternário por que junta 3 operandos   
+        teste ? true : false
+        Exemplos: NodeJS
+        var média = 5.5
+        média > 7?'APROVADO':'REPROVADO'
+        'REPROVADO'
+        média += 3
+        8.5
+        var idade = 19
+        var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+        'MAIOR'           
+
+     */
+        
+    </script>
+</body>
+</html>

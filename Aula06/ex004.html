@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá, <strong> ${nome} </strong>! seu nome tem ${nome.length} letras <br/>`)
+        document.write(`seu nome em maiusculo é ${nome.toLocaleUpperCase()}<br/>`) //br siginifica break roll, quebre para linha de baixo
+        document.write(`seu nome em menúsculo é ${nome.toLocaleLowerCase()}<br/>`)
+        /*anotações do node
+        var n1 = 1545.5
+        n1
+        1545.5
+        n1.toFixed(2) //duas casa decimais
+        1545.50
+        n1.toFixed(2).replace('.' , ',') //trocar ponto por virgula
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //(n1.toLocaleString) para localizar o pais, (currency) representando dinheiro/moeda, BRL real.
+        para mudar a moeda basta trocar o BRL para a moeda referente ao pais, ex USD,EUR... */
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="estilo.css"> <!-- para fazer esse comando é só digitar link e escolher link: css
+    ele abrira um link externo para o css, ao segurar o ctrl e clicar no arquivo href="(nome do arquivo).css"
+    ocorrerá um erro pois o arquivo não existe, o progama vai perguntar se deseja criar um, então basta
+    clicar em create file." -->
+</head>
+<body onload="carregar()"> <!-- o 'carregar' é o nome da function que esta no arquivo externo de JS,
+carregara todo o código que esta dentro do bloco dessa function.-->
+
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="msg">
+            Aqui vai aparecer a mensagem...
+        </div>
+        <div id="foto">
+            <img id="imagem" src="fotomanha.png" alt="foto do dia">
+        </div>
+    </section>
+    <footer>
+      <p> &copy; CursoemVideo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
